@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="94092903.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="N4J-KY-Mv7">
-                                <rect key="frame" x="36" y="49" width="324" height="262"/>
+                                <rect key="frame" x="36" y="48" width="324" height="262"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="N4J-KY-Mv7" secondAttribute="height" multiplier="162:131" id="23l-oN-Gp4"/>
                                     <constraint firstAttribute="width" constant="324" id="eWd-SE-eJJ"/>
