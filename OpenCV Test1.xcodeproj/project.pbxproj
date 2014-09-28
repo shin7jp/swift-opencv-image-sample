@@ -13,6 +13,9 @@
 		54F7F755197AA19500806EA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F7F753197AA19500806EA7 /* Main.storyboard */; };
 		54F7F757197AA19500806EA7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F7F756197AA19500806EA7 /* Images.xcassets */; };
 		54F7F763197AA19500806EA7 /* OpenCV_Test1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7F762197AA19500806EA7 /* OpenCV_Test1Tests.swift */; };
+		54F7F76D197AA67E00806EA7 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F7F76C197AA67E00806EA7 /* opencv2.framework */; };
+		54F7F772197AAFC100806EA7 /* 94092903.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 54F7F771197AAFC100806EA7 /* 94092903.JPG */; };
+		54F7F774197AB16B00806EA7 /* OpenCV2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 54F7F773197AB16B00806EA7 /* OpenCV2.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 		54F7F75C197AA19500806EA7 /* OpenCV Test1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenCV Test1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F7F761197AA19500806EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54F7F762197AA19500806EA7 /* OpenCV_Test1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCV_Test1Tests.swift; sourceTree = "<group>"; };
+		54F7F76C197AA67E00806EA7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../Downloads/opencv2.framework; sourceTree = "<group>"; };
+		54F7F76E197AA77800806EA7 /* OpenCV Test1-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCV Test1-Bridging-Header.h"; sourceTree = "<group>"; };
+		54F7F771197AAFC100806EA7 /* 94092903.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 94092903.JPG; sourceTree = "<group>"; };
+		54F7F773197AB16B00806EA7 /* OpenCV2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCV2.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F7F76D197AA67E00806EA7 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,7 @@
 		54F7F73E197AA19500806EA7 = {
 			isa = PBXGroup;
 			children = (
+				54F7F76C197AA67E00806EA7 /* opencv2.framework */,
 				54F7F749197AA19500806EA7 /* OpenCV Test1 */,
 				54F7F75F197AA19500806EA7 /* OpenCV Test1Tests */,
 				54F7F748197AA19500806EA7 /* Products */,
@@ -77,12 +86,15 @@
 		54F7F749197AA19500806EA7 /* OpenCV Test1 */ = {
 			isa = PBXGroup;
 			children = (
+				54F7F771197AAFC100806EA7 /* 94092903.JPG */,
 				54F7F74C197AA19500806EA7 /* AppDelegate.swift */,
+				54F7F773197AB16B00806EA7 /* OpenCV2.mm */,
 				54F7F751197AA19500806EA7 /* ViewController.swift */,
 				54F7F753197AA19500806EA7 /* Main.storyboard */,
 				54F7F756197AA19500806EA7 /* Images.xcassets */,
 				54F7F74E197AA19500806EA7 /* OpenCV_Test1.xcdatamodeld */,
 				54F7F74A197AA19500806EA7 /* Supporting Files */,
+				54F7F76E197AA77800806EA7 /* OpenCV Test1-Bridging-Header.h */,
 			);
 			path = "OpenCV Test1";
 			sourceTree = "<group>";
@@ -193,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54F7F755197AA19500806EA7 /* Main.storyboard in Resources */,
+				54F7F772197AAFC100806EA7 /* 94092903.JPG in Resources */,
 				54F7F757197AA19500806EA7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +227,7 @@
 				54F7F752197AA19500806EA7 /* ViewController.swift in Sources */,
 				54F7F750197AA19500806EA7 /* OpenCV_Test1.xcdatamodeld in Sources */,
 				54F7F74D197AA19500806EA7 /* AppDelegate.swift in Sources */,
+				54F7F774197AB16B00806EA7 /* OpenCV2.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,9 +345,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/shin/Downloads,
+				);
 				INFOPLIST_FILE = "OpenCV Test1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCV Test1/OpenCV Test1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -342,9 +364,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/shin/Downloads,
+				);
 				INFOPLIST_FILE = "OpenCV Test1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenCV Test1/OpenCV Test1-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -401,6 +430,7 @@
 				54F7F768197AA19500806EA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54F7F769197AA19500806EA7 /* Build configuration list for PBXNativeTarget "OpenCV Test1Tests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +439,7 @@
 				54F7F76B197AA19500806EA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

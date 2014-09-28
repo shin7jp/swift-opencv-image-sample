@@ -9,7 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-                            
+
+    @IBOutlet var imageData: UIImageView?
+    
+    @IBAction func ImageProcessButton(sender: AnyObject) {
+        var image = imageData?.image
+        var edgeImage = OpenCV2.DetectEdgeWithImage(image);
+        
+        imageData?.image = edgeImage;
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
