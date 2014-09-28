@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540DFF9E19D80DB600617533 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540DFF9D19D80DB600617533 /* Launch Screen.xib */; };
 		54F7F74D197AA19500806EA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7F74C197AA19500806EA7 /* AppDelegate.swift */; };
 		54F7F750197AA19500806EA7 /* OpenCV_Test1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54F7F74E197AA19500806EA7 /* OpenCV_Test1.xcdatamodeld */; };
 		54F7F752197AA19500806EA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7F751197AA19500806EA7 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		540DFF9D19D80DB600617533 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		54F7F747197AA19500806EA7 /* OpenCV Test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCV Test1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F7F74B197AA19500806EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54F7F74C197AA19500806EA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		54F7F73E197AA19500806EA7 = {
 			isa = PBXGroup;
 			children = (
+				540DFF9D19D80DB600617533 /* Launch Screen.xib */,
 				54F7F76C197AA67E00806EA7 /* opencv2.framework */,
 				54F7F749197AA19500806EA7 /* OpenCV Test1 */,
 				54F7F75F197AA19500806EA7 /* OpenCV Test1Tests */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54F7F755197AA19500806EA7 /* Main.storyboard in Resources */,
+				540DFF9E19D80DB600617533 /* Launch Screen.xib in Resources */,
 				54F7F772197AAFC100806EA7 /* 94092903.JPG in Resources */,
 				54F7F757197AA19500806EA7 /* Images.xcassets in Resources */,
 			);
