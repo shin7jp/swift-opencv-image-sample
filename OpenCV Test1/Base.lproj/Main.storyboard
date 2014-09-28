@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uve-jx-3nw">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uve-jx-3nw">
                                 <rect key="frame" x="195" y="27" width="90" height="30"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
                                 <state key="normal" title="画像処理">
@@ -30,21 +30,10 @@
                                     <action selector="ImageProcessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FSy-1F-ME2"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="94092903.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="N4J-KY-Mv7">
-                                <rect key="frame" x="0.0" y="59" width="480" height="421"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="N4J-KY-Mv7" secondAttribute="height" multiplier="480:421" id="JDZ-Nz-Hf0"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="JDZ-Nz-Hf0"/>
-                                    </mask>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="94092903.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="N4J-KY-Mv7">
+                                <rect key="frame" x="81" y="100" width="324" height="262"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="58" width="480" height="421"/>
-                                    <mask key="constraints">
-                                        <include reference="JDZ-Nz-Hf0"/>
-                                    </mask>
                                 </variation>
                                 <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="65" width="640" height="421"/>
@@ -56,35 +45,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="N4J-KY-Mv7" secondAttribute="trailing" priority="750" constant="20" symbolic="YES" id="0g8-XL-m5h"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N4J-KY-Mv7" secondAttribute="bottom" id="DZF-U7-7QC"/>
-                            <constraint firstItem="N4J-KY-Mv7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" priority="750" constant="20" symbolic="YES" id="UMH-HF-NOp"/>
-                            <constraint firstAttribute="centerX" secondItem="Uve-jx-3nw" secondAttribute="centerX" id="WZX-vA-o8E"/>
-                            <constraint firstAttribute="centerX" secondItem="N4J-KY-Mv7" secondAttribute="centerX" priority="750" id="fzq-ne-bi4"/>
-                            <constraint firstAttribute="centerY" secondItem="N4J-KY-Mv7" secondAttribute="centerY" priority="750" id="nSa-lZ-8W2">
-                                <variation key="heightClass=regular" constant="60"/>
-                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="N4J-KY-Mv7" secondAttribute="centerY" id="YSi-C4-zxa"/>
+                            <constraint firstAttribute="centerX" secondItem="N4J-KY-Mv7" secondAttribute="centerX" id="hUL-nA-Hm2"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="0g8-XL-m5h"/>
-                                <exclude reference="UMH-HF-NOp"/>
-                                <exclude reference="fzq-ne-bi4"/>
-                                <exclude reference="nSa-lZ-8W2"/>
-                                <exclude reference="WZX-vA-o8E"/>
-                                <exclude reference="DZF-U7-7QC"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="constraints">
-                                <include reference="0g8-XL-m5h"/>
-                                <include reference="UMH-HF-NOp"/>
-                                <include reference="fzq-ne-bi4"/>
-                                <include reference="nSa-lZ-8W2"/>
-                                <include reference="WZX-vA-o8E"/>
-                                <include reference="DZF-U7-7QC"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="imageData" destination="N4J-KY-Mv7" id="zbl-CX-UmT"/>
