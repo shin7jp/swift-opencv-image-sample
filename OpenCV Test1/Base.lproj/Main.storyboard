@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uve-jx-3nw">
-                                <rect key="frame" x="195" y="27" width="90" height="30"/>
+                                <rect key="frame" x="142" y="28" width="90" height="30"/>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
                                 <state key="normal" title="画像処理">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="94092903.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="N4J-KY-Mv7">
-                                <rect key="frame" x="81" y="100" width="324" height="262"/>
+                                <rect key="frame" x="30" y="134" width="324" height="262"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="0.0" y="58" width="480" height="421"/>
                                 </variation>
