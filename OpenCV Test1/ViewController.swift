@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     
     @IBAction func ImageProcessButton(sender: AnyObject) {
         var image = imageData?.image
-        var edgeImage = OpenCV2.DetectEdgeWithImage(image);
+        var blurImage = OpenCV2.BlurImage(image);
         
-        imageData?.image = edgeImage;
+        imageData?.image = blurImage;
     }
     
     override func viewDidLoad() {

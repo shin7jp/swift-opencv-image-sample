@@ -6,6 +6,6 @@
 #import <UIKit/UIKit.h>
 
 @interface OpenCV2 : NSObject
-+ (UIImage *)DetectEdgeWithImage:(UIImage *)image;
++ (UIImage *)BlurImage:(UIImage *)image;
 @end
 

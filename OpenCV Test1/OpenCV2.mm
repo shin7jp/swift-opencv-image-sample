@@ -14,23 +14,19 @@
 #import <opencv2/highgui/ios.h>
 
 @implementation OpenCV2 : NSObject
-+ (UIImage *)DetectEdgeWithImage:(UIImage *)image {
-    //UIImageをcv::Matに変換
++ (UIImage *)BlurImage:(UIImage *)image {
+    //UIImage -> cv::Mat
     cv::Mat mat;
     UIImageToMat(image, mat);
     
-    //グレー画像に変換
-    cv::Mat gray;
-    cv::cvtColor(mat, gray, CV_BGR2GRAY);
+    // Blurフィルタ
+    cv::Mat blur;
+    cv::blur(mat, blur, cv::Size(10,10));
     
-    // エッジ検出
-    cv::Mat edge;
-    cv::Canny(gray, edge, 200, 100);
+    // cv::Mat -> UIImage
+    UIImage *retImg = MatToUIImage(blur);
     
-    // cv::MatをUIImageに変換
-    UIImage *edgeImg = MatToUIImage(edge);
-    
-    return edgeImg;
+    return retImg;
 }
 
 @end
